@@ -28,7 +28,7 @@
     }
 
     &--p2 {
-      top: 20px;
+      top: 30px;
       right: 0rem;
 
       @include media-query(tablet-portrait) {
@@ -39,7 +39,7 @@
     }
 
     &--p3 {
-      top: 10rem;
+      top: 17.5rem;
       left: 20%;
 
       @include media-query(tablet-portrait) {
@@ -50,10 +50,21 @@
     }
 
     &:hover {
-      transform: scale(1.05) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       outline: 1.5rem solid $color-primary;
       z-index: 20;
+    }
+
+    &--p1:hover {
+      transform: scale(1.15) translateY(-.5rem);
+    }
+
+    &--p2:hover {
+      transform: scale(1.2) translateY(-.5rem);
+    }
+
+    &--p3:hover {
+      transform: scale(1.3) translateY(-.5rem);
     }
   }
 

@@ -1,8 +1,8 @@
 .footer {
   color: $color-grey-light-1;
   background-color: $color-grey-dark-3;
-  padding: 10rem 0;
-  font-size: 1.4rem;
+  padding: 6rem 0;
+  font-size: 1rem;
 
   @include media-query(tablet-portrait) {
     padding: 8rem 0;
@@ -10,15 +10,15 @@
 
   &__logo-box {
     text-align: center;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 
     @include media-query(tablet-portrait) {
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
     } 
   }
 
   &__logo {
-    width: 15rem;
+    width: 10rem;
     height: auto;
   }
 

@@ -37,6 +37,10 @@
     width: calc((100% - #{$gutter-horizontal}) / 2);
   }
 
+  .special-col-1-of-3 {
+    width: calc(100% / 3);
+  }
+
   .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
   }
