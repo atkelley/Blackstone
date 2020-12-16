@@ -37,12 +37,13 @@
     }
   }
 
-  &--green {
-    background-color: $color-primary;
+  &--blue {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-color: $color-primary-light;
     color: $color-white;
 
     &::after {
-      background-color: $color-primary;
+      background-color: $color-primary-light;
     }
   }
   
