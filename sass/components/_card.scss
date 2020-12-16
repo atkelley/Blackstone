@@ -28,11 +28,11 @@
         background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8));
       }
 
-      &-green {
+      &-blue {
         background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
       }
 
-      &-blue {
+      &-green {
         background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8));
       }
     }
@@ -54,15 +54,15 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--orange {
-      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8)), url("../img/nat-5.jpg");
-    }
-
-    &--green {
-      background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("../img/nat-6.jpg");
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8)), url("../images/kayak-1.jpg");
     }
 
     &--blue {
-      background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8)), url("../img/nat-7.jpg");
+      background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("../images/barge.jpeg");
+    }
+
+    &--green {
+      background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.8), rgba($color-tertiary-dark, 0.8)), url("../images/kayak-21.jpg");
     }
   }
 
@@ -87,11 +87,11 @@
       background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.85), rgba($color-secondary-dark, 0.85));
     }
 
-    &--green {
+    &--blue {
       background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.85), rgba($color-primary-dark, 0.85));
     }
 
-    &--blue {
+    &--green {
       background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.85), rgba($color-tertiary-dark, 0.85));
     }
   }
