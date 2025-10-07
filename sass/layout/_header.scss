@@ -1,6 +1,9 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.4)), url('../images/waterfall-header.jpg');
+  background-image: linear-gradient(to right bottom, rgba(v.$color-primary-light, 0.4), rgba(v.$color-primary-dark, 0.4)), url('../images/waterfall-header.jpg');
   background-position: top;
   background-size: cover;
   position: relative;
@@ -14,10 +17,10 @@
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
          only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
          only screen and (min-width: 90em) {
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.4)), url('../images/waterfall-header.jpg');
+    background-image: linear-gradient(to right bottom, rgba(v.$color-primary-light, 0.4), rgba(v.$color-primary-dark, 0.4)), url('../images/waterfall-header.jpg');
   }
 
-  @include media-query(phone) {
+  @include m.media-query(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   } 

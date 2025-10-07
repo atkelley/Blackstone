@@ -1,12 +1,15 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: $color-grey-dark;
+  color: v.$color-grey-dark;
 }
 
 .heading-primary {
-  color: $color-white;
+  color: v.$color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -18,7 +21,7 @@ body {
     letter-spacing: 3.5rem;
     animation: moveInLeft 1s ease-out;
 
-    @include media-query(phone) {
+    @include m.media-query(phone) {
       font-size: 5rem;
       letter-spacing: 1rem;
     }  
@@ -38,35 +41,35 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  background-image: linear-gradient(to right, v.$color-primary-light, v.$color-primary-dark);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   transition: all .2s;
   letter-spacing: 2px;
 
-  @include media-query(table-portrait) {
+  @include m.media-query(table-portrait) {
     font-size: 3.5rem;
   }  
 
-  @include media-query(phone) {
+  @include m.media-query(phone) {
     font-size: 3rem;
   }  
 
   &:hover {
     transform: skewY(2deg) skewX(5deg) scale(1.1);
-    text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+    text-shadow: .5rem 1rem 2rem rgba(v.$color-black, 0.2);
   }
 }
 
 .heading-tertiary {
-  font-size: $default-font-size;
+  font-size: v.$default-font-size;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .paragraph {
-  font-size: $default-font-size;
+  font-size: v.$default-font-size;
 
   &:not(:last-child) {
     margin-bottom: 3rem;

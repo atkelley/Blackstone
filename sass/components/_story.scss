@@ -1,22 +1,25 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
 .story {
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
-  background-color: rgba($color-white, 0.6);
+  box-shadow: 0 3rem 6rem rgba(v.$color-black, 0.1);
+  background-color: rgba(v.$color-white, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: $default-font-size;
+  font-size: v.$default-font-size;
   transform: skewX(-12deg);
   position: relative;
 
-  @include media-query(tablet-portrait) {
+  @include m.media-query(tablet-portrait) {
     width: 100%;
     padding: 4rem;
     padding-left: 7rem;
   } 
 
-  @include media-query(phone) {
+  @include m.media-query(phone) {
     transform: skewX(0);
   } 
 
@@ -34,7 +37,7 @@
       clip-path: circle(50% at 50% 50%);
     }
 
-    @include media-query(phone) {
+    @include m.media-query(phone) {
       transform: translateX(-3rem) skewX(0);
     } 
   }
@@ -49,7 +52,7 @@
   &__text {
     transform: skewX(12deg);
 
-    @include media-query(phone) {
+    @include m.media-query(phone) {
       transform: skewX(0);
     } 
   }
@@ -59,7 +62,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
-    color: rgba($color-white, 0.0);
+    color: rgba(v.$color-white, 0.0);
     text-transform: uppercase;
     font-size: 1.7rem;
     text-align: center;
@@ -69,7 +72,7 @@
 
   &:hover &__caption{
     transform: translate(-50%, -50%);
-    color: rgba($color-white, 1.0);
+    color: rgba(v.$color-white, 1.0);
   }
 
   &:hover &__image {

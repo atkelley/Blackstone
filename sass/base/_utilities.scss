@@ -1,15 +1,17 @@
+@use "../abstract/mixins" as m;
+
 .u-center-text { text-align: center!important; }
 .u-margin-bottom-big { 
   margin-bottom: 8rem!important; 
 
-  @include media-query(tablet-portrait) {
+  @include m.media-query(tablet-portrait) {
     margin-bottom: 5rem!important; 
   } 
 }
 .u-margin-bottom-medium { 
   margin-bottom: 4rem!important; 
 
-  @include media-query(tablet-portrait) {
+  @include m.media-query(tablet-portrait) {
     margin-bottom: 3rem!important; 
   } 
 }

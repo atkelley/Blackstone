@@ -1,3 +1,6 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
 *,
 *::before,
 *::after {
@@ -9,19 +12,19 @@
 html {
   font-size: 62.5%;   // 1rem definition = 10px; 10px / 16px = 62.5%
 
-  @include media-query(desktop-big-screen) {
+  @include m.media-query(desktop-big-screen) {
     font-size: 75%; // 1 rem = 12px; 12px / 16px = 75%
   }
 
-  @include media-query(tablet-landscape) {
+  @include m.media-query(tablet-landscape) {
     font-size: 56.25%; // 1 rem = 9px; 9px / 16px = 56.25%
   }
 
-  @include media-query(tablet-portrait) {
+  @include m.media-query(tablet-portrait) {
     font-size: 50%; // 1 rem = 8px; 8px / 16px = 50%
   }
 
-  @include media-query(phone) {
+  @include m.media-query(phone) {
     font-size: 37.5%; // 1 rem = 6px; 6px / 16px = 37.5%
   }
 }
@@ -30,12 +33,12 @@ body {
   box-sizing: border-box;
   padding: 3rem;
 
-  @include media-query(tablet-portrait) {
+  @include m.media-query(tablet-portrait) {
     padding: 0;
   }
 }
 
 ::selection {
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: v.$color-primary;
+  color: v.$color-white;
 }

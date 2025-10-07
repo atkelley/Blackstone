@@ -1,3 +1,6 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
 .form {
   &__group:not(:last-child) {
     margin-bottom: 2rem;
@@ -9,29 +12,29 @@
     font-family: inherit;
     padding: 1.5rem 2rem;
     border-radius: 3px;
-    background-color: rgba($color-white, 0.5);
+    background-color: rgba(v.$color-white, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
     transition: all .3s;
 
-    @include media-query(tablet-portrait) {
+    @include m.media-query(tablet-portrait) {
       width: 100%;
     }
 
     &:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
-      border-bottom: 3px solid $color-primary;
+      box-shadow: 0 1rem 2rem rgba(v.$color-black, 0.1);
+      border-bottom: 3px solid v.$color-primary;
 
       &:invalid {
-        border-bottom: 3px solid $color-secondary-dark;
+        border-bottom: 3px solid v.$color-secondary-dark;
       }
     }
 
     &::-webkit-input-placeholder {
-      color: $color-grey-dark-2;
+      color: v.$color-grey-dark-2;
     }
   }
 
@@ -54,7 +57,7 @@
     width: 49%;
     display: inline-block;
 
-    @include media-query(tablet-portrait) {
+    @include m.media-query(tablet-portrait) {
       width: 100%;
       margin-bottom: 3rem;
     }
@@ -66,11 +69,11 @@
 
   &__radio-label {
     position: relative;
-    font-size: $default-font-size;
+    font-size: v.$default-font-size;
     cursor: pointer;
     padding-left: 5rem;
 
-    @include media-query(phone) {
+    @include m.media-query(phone) {
       padding-left: 7rem;
     }
   }
@@ -79,17 +82,17 @@
     display: inline-block;
     height: 30px;
     width: 30px;
-    border: 5px solid $color-primary-light;
+    border: 5px solid v.$color-primary-light;
     border-radius: 50%;
     position: absolute;
     top: -.4rem;
     left: 0;
 
-    @include media-query(tablet-portrait) {
+    @include m.media-query(tablet-portrait) {
       top: -.8rem;
     }
 
-    @include media-query(phone) {
+    @include m.media-query(phone) {
       top: -1.25rem;
     }
 
@@ -103,7 +106,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: $color-primary-light;
+      background-color: v.$color-primary-light;
       opacity: 0;
       transform: all .1s;
     }
