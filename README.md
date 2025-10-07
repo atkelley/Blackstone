@@ -3,4 +3,4 @@ Blackstone is an frontend project that displays various frontend techniques (@ke
 
 Astrollaneous uses SASS, HTML5, GoogleFonts, NPM build packages (prefix, concatenate, compile) and is deployed through Heroku here:
 
-[https://blackstone.fly.dev/](https://blackstone.fly.dev/)
+[https://blackstone-8r1.pages.dev/](https://blackstone-8r1.pages.dev/)
